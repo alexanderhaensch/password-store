@@ -45,7 +45,7 @@ def path_for(element, path=''):
     else: title = ''
     
     if path == '': return title
-    else: return '/'.join([path, title])
+    else: return '/'.join([path, str(title)])
 
 def password_data(element, path=''):
     """ Return password data and additional info if available from password entry element. """
